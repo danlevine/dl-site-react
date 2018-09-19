@@ -1,23 +1,34 @@
 import React, { Component } from "react";
-import { Router, Link } from "@reach/router";
+import { Router } from "@reach/router";
 import styled from "styled-components";
 import ContentAbout from "../ContentAbout";
 import ContentHome from "../ContentHome";
 import ContentLinks from "../ContentLinks";
 
-import logo from "../../assets/logo.svg";
+import AppHeader from "../AppHeader";
 
 class App extends Component {
+  getLinks() {
+    return [
+      {
+        title: "Home",
+        url: "/"
+      },
+      {
+        title: "About",
+        url: "/about"
+      },
+      {
+        title: "Links",
+        url: "/links"
+      }
+    ];
+  }
+
   render() {
     return (
       <AppStyled className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-          <Link to="/">home</Link>
-          <Link to="/about">about</Link>
-          <Link to="/links">links</Link>
-        </header>
+        <AppHeader links={this.getLinks()} />
         <Router>
           <ContentHome path="/" />
           <ContentAbout path="/about" />
