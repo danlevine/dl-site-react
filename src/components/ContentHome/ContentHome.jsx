@@ -1,6 +1,10 @@
 import React from "react";
-import "./ContentHome.css";
+import styled from "styled-components";
 
-const ContentHome = props => <h1>home!</h1>;
+const H1 = styled.h1`
+  color: red;
+`;
+
+const ContentHome = props => <H1>home!</H1>;
 
 export default ContentHome;

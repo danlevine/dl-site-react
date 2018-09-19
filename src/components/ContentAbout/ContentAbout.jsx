@@ -1,6 +1,10 @@
 import React from "react";
-import "./ContentAbout.css";
+import styled from "styled-components";
 
-const ContentAbout = props => <h1>about!</h1>;
+const H1 = styled.h1`
+  color: purple;
+`;
+
+const ContentAbout = props => <H1>about!</H1>;
 
 export default ContentAbout;

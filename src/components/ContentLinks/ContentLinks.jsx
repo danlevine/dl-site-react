@@ -1,6 +1,10 @@
 import React from "react";
-import "./ContentLinks.css";
+import styled from "styled-components";
 
-const ContentLinks = props => <h1>links!</h1>;
+const H1 = styled.h1`
+  color: orange;
+`;
+
+const ContentLinks = props => <H1>links!</H1>;
 
 export default ContentLinks;
