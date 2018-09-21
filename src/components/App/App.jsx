@@ -6,6 +6,7 @@ import ContentHome from "../ContentHome";
 import ContentLinks from "../ContentLinks";
 
 import AppHeader from "../AppHeader";
+import Puckman from "../Puckman/Puckman";
 
 class App extends Component {
   getLinks() {
@@ -34,6 +35,7 @@ class App extends Component {
           <ContentAbout path="/about" />
           <ContentLinks path="/links" />
         </Router>
+        <Puckman />
       </AppStyled>
     );
   }

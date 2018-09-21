@@ -56,3 +56,7 @@ body {
   padding: 20px;
   line-height: 1;
 }
+
+.puckman-food {
+  opacity: 0 !important;
+}
